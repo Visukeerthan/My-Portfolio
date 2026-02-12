@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container py-5">
+    <h2 class="text-center mb-5">Technical Projects</h2>
+    <div class="row">
+        {% for project in projects %}
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                {% if project.image %}
+                <img src="{{ project.image.url }}" class="card-img-top" alt="{{ project.title }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ project.title }}</h5>
+                    <p class="card-text text-muted">{{ project.description|truncatewords:20 }}</p>
+                    <p><strong>Tech:</strong> {{ project.tags }}</p>
+                    <a href="{{ project.github_url }}" class="btn btn-sm btn-outline-dark">View Code</a>
+                </div>
+            </div>
+        </div>
+        {% empty %}
+        <p class="text-center">No projects added yet.</p>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

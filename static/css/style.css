@@ -1,0 +1,77 @@
+/* Custom Hero Background */
+.bg-dark {
+    background: linear-gradient(45deg, #1a1a1a, #2c3e50) !important;
+}
+
+/* Feature icons styling */
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.75rem;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* Button hover animation */
+.btn-primary {
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+    border-left: 4px solid #0d6efd;
+}
+
+.bg-primary { background-color: #0d6efd !important; }
+.bg-success { background-color: #198754 !important; }
+.bg-info { background-color: #0dcaf0 !important; }
+
+.social-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 20px;
+}
+
+.social-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+/* Specific Brand Colors on Hover */
+.linkedin:hover { border-bottom: 5px solid #0077b5; }
+.github:hover { border-bottom: 5px solid #333; }
+.email:hover { border-bottom: 5px solid #28a745; }
+
+.rounded-pill {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hover-lift {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1) !important;
+    background-color: #f8f9fa !important;
+}
+
+.form-control:focus {
+    background-color: #fff !important;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+    border: 1px solid #0d6efd !important;
+}
+
+.home-title{
+    font-size: medium;
+}
